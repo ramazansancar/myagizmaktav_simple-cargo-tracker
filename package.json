@@ -1,11 +1,36 @@
 {
   "name": "fedex-dhl-simple-cargo-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Cargo Tracker",
   "main": "index.ts",
+  "homepage": "https://github.com/myagizmaktav/fedex-dhl-simple-cargo-tracker",
+  "bugs": {
+    "url": "https://github.com/myagizmaktav/fedex-dhl-simple-cargo-tracker/issues"
+  },
+  "files": [
+    "src",
+    "index.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myagizmaktav/fedex-dhl-simple-cargo-tracker.git"
+  },
+  "author": "Mehmet Yağız Maktav <myagizmaktav@users.noreply.github.com>",
+  "keywords": [
+    "cargo",
+    "tracker",
+    "fedex",
+    "dhl",
+    "shipping",
+    "tracking",
+    "api"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "directories": {
+    "lib": "lib"
+  },
+
+  "license": "MIT"
 }
