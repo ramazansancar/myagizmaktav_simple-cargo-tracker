@@ -1,6 +1,6 @@
 {
   "name": "fedex-dhl-simple-cargo-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Cargo Tracker",
   "main": "index.ts",
   "homepage": "https://github.com/myagizmaktav/fedex-dhl-simple-cargo-tracker",
