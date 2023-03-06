@@ -5,8 +5,9 @@ const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
  * @param trackingNumberArray [ "1234567890", "1234567890" ]
  *  @param dhl_api_key From your authorization for your app
  * @returns DhlApiResponse[]
+ *
  */
-export const dhl = async ({
+const unifiedDhl = async ({
   dhl_api_key,
   trackingNumberArray,
 }: {
@@ -36,12 +37,7 @@ export const dhl = async ({
   return result as DhlApiResponse[];
 };
 
-// example
-dhl({
-  dhl_api_key: "iJ9HCrB9FS7GYZEBp0SBRVgGoWfW0CFz",
-  trackingNumberArray: ["00340434292135100186", "8570159522", "6335655351"],
-}).then((res) => console.log(res));
-
+export default unifiedDhl;
 export interface DhlApiResponse {
   url: string;
   prevUrl: string;

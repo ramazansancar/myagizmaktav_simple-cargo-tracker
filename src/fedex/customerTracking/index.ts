@@ -27,8 +27,10 @@ const getAuth = (clientID: string, secretID: string) => {
  * @param clientID From your authorization
  * @param secretID From your authorization
  * @returns FedexApiResponse[]
+ * @brief This endpoint provides customers Package tracking information based on a tracking number for various shipping services.
+ * @detail shorturl.at/nuCJU
  */
-export const fedex = async ({
+const customerTracking = async ({
   trackingNumberArray,
   clientID,
   secretID,
@@ -100,6 +102,8 @@ export const fedex = async ({
 
   return result as FedexApiResponse[];
 };
+
+export default customerTracking;
 
 export interface FedexApiResponse {
   transactionId: string;
